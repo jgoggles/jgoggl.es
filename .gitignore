@@ -16,3 +16,4 @@ Capfile
 nbproject/*
 log/*.log
 public/.DS_Store
+config/deploy.rb
