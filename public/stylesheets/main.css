@@ -1,0 +1,95 @@
+@import url(reset.css);
+
+pre {white-space: normal}
+
+p.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-weight: 300;}
+
+p.date {color: #999;}
+
+#container {height: 2000px; margin: 12px auto; width: 660px;}
+#container h2.tk-sorts-mill-goudy {color: rgb(153, 102, 0); font-size: 24px; font-weight: 300; text-transform: uppercase;}
+#container p {background: #fff; color:#666; margin: 6px 0 12px 0;}
+#container img {outline: #ccc 8px solid; margin: 10px;}
+
+#header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 12px 0; text-align: center;}
+#header h1.tk-sorts-mill-goudy {color: rgb(153, 102, 0); font-size: 100px; font-weight: 400;}
+#header h2.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-style: italic; font-weight: 300; margin: 0 auto; width: 400px;}
+
+#footer {background: #ccc; border-top: #eee 3px solid; bottom: 0px; height: 30px; position: fixed; width: 100%;}
+
+table {
+    border: 1px solid rgb(200, 200, 200);
+    border-collapse: collapse;
+    table-layout: fixed;    
+}
+th {
+    background: #f0f0f0;
+}
+th, td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 5px; 
+}
+
+/* Error Reporting Styles */
+
+.fieldWithErrors {
+	margin: 2px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+#errorExplanation {
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+	font-size: 12pt;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;		
+}
+
+#errorExplanation p {
+	background-color: #f0f0f0;
+	color: #333;
+	margin-bottom: 0;
+	margin-top: 8px;
+	padding: 5px;
+}
+
+#errorExplanation ul li {
+	font-size: 11pt;
+	list-style: square;
+	margin-left: 50px;
+}
+
+/*Flash Notice Style*/
+
+#notice {
+	border: 1px solid green;
+	padding: 1em;
+	margin: 1em;
+	margin-bottom: 2em;
+	background-color: lightgray;
+	width: 400px;
+/*	font: bold smaller sans-serif;*/
+}
+	
+#error {
+	border: 1px solid #c99;
+	background: #c00;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+	width: 500px;
+}

@@ -1,0 +1,16 @@
+<% @posts.each do |post| %>
+	<p class="date"><%= post.created_at.strftime("%m/%d/%Y") %></p>
+	<h2 class="tk-sorts-mill-goudy"><%= post.title %></h2>
+	
+	<img src="/images/vampd.jpg" alt="" />
+	
+	<p><%= post.body %></p>
+	
+	<% if current_user %>
+		<ul>
+			<li><%= link_to 'Show', post %></li>
+	    <li><%= link_to 'Edit', edit_post_path(post) %></li>
+	    <li><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></li>
+		</ul>
+	<% end %>
+<% end %>
