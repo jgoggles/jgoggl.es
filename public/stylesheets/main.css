@@ -6,7 +6,7 @@ p.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-weight: 300;}
 
 p.date {color: #999;}
 
-#container {margin: 12px auto; width: 660px;}
+#container {margin: 12px auto 42px auto; width: 660px;}
 #container h2.tk-sorts-mill-goudy {color: rgb(153, 102, 0); font-size: 24px; font-weight: 300; text-transform: uppercase;}
 #container p {background: #fff; color:#666; margin: 6px 0 12px 0;}
 #container img {outline: #ccc 8px solid; margin: 10px;}
