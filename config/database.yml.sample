@@ -16,7 +16,7 @@ development:
   adapter: mysql
   database: jgoggles_development
   username: root
-  password: Ih8uih8U
+  password: NONONO
   host: localhost
   # socket: /var/run/mysqld/mysqld.sock
 
@@ -27,7 +27,7 @@ test: &TEST
   adapter: mysql
   database: jgoggles_test
   username: root
-  password: Ih8uih8U
+  password: NONONO
   host: localhost
   # socket: /var/run/mysqld/mysqld.sock
 
@@ -35,7 +35,7 @@ production:
   adapter: mysql
   database: jgoggles_production
   username: root
-  password: Ih8uih8U
+  password: NONONO
   host: localhost
   # socket: /var/run/mysqld/mysqld.sock
 
