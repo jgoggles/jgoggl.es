@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.xml
   def index
     @posts = Post.published
+    @post = @posts.first
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,6 +16,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.xml
   def show
+    @posts = Post.published
     @post = Post.find(params[:id])
 
     respond_to do |format|
@@ -81,7 +83,7 @@ class PostsController < ApplicationController
     @post.destroy
 
     respond_to do |format|
-      format.html { redirect_to(posts_url) }
+      format.html { redirect_to(:controller => 'admin') }
       format.xml  { head :ok }
     end
   end

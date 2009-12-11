@@ -1,0 +1,2 @@
+module TaglinesHelper
+end

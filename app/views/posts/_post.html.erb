@@ -1,0 +1,26 @@
+<% @page_title = @post.title %>
+<div class="post">
+	<span class="date tk-sorts-mill-goudy"><%= @post.created_at.strftime("%B %d, %Y") %></span>
+
+	<% if @post.title_image.url == "/title_images/original/missing.png" %>
+		<h2 class="tk-sorts-mill-goudy"><%= link_to @post.title, @post %></h2>
+	<% else %>
+		<h2 class="off"><%= @post.title %></h2>
+		<%= link_to image_tag (@post.title_image.url, :title => @post.title), @post %>
+	<% end %>
+
+	<p class="body"><%= @post.body %></p>
+</div>
+
+<% if current_user %>
+	<div class="adminControls">
+		<ul>
+			<li><%= link_to 'Show', @post %></li>
+	    <li><%= link_to 'Edit', edit_post_path(@post) %></li>
+	    <li><%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %></li>
+		</ul>
+	</div>
+	<div class="clearBoth"></div>
+<% end %>
+
+<%= render :partial => 'recent' %>

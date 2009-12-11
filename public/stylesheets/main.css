@@ -1,21 +1,38 @@
 @import url(reset.css);
 
-pre {white-space: normal}
+.first {margin-left: 0px !important;}
+.last {margin-right: 0px !important;}
+.off {text-indent: -1000px; margin-top: -20px;}
 
-p.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-weight: 300;}
+a, a:active, a:visited {color: #996600;}
+a:hover {color: #ccc;}
 
-p.date {color: #999;}
+h2.tk-sorts-mill-goudy {font-size: 24px; font-weight: 300;}
 
 #container {margin: 12px auto 42px auto; width: 660px;}
-#container h2.tk-sorts-mill-goudy {color: rgb(153, 102, 0); font-size: 24px; font-weight: 300; text-transform: uppercase;}
-#container p {background: #fff; color:#666; margin: 6px 0 12px 0;}
-#container img {outline: #ccc 8px solid; margin: 10px;}
+#container .post h2 {text-transform: uppercase;}
+#container .post h2 a {color: #996600;}
+#container .post h2 a:hover {color: #ccc;}
+#container .post p {background: #fff; color:#333; font-family: times, georgia, serif; margin: 6px 3px 12px 3px;}
+#container .post span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
+#container .post a img {outline: #ccc 8px solid; margin: 10px;}
+#container .post a:hover img {outline: #996600 8px solid;}
 
 #header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 12px 0; text-align: center;}
-#header h1.tk-sorts-mill-goudy {color: rgb(153, 102, 0); font-size: 100px; font-weight: 400;}
+#header h1.tk-sorts-mill-goudy a {color: #333333; font-size: 100px; font-weight: 400;}
+#header h1.tk-sorts-mill-goudy a:hover {color: #996600;}
 #header h2.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-style: italic; font-weight: 300; margin: 0 auto; width: 400px;}
 
 #footer {background: #ccc; border-top: #eee 3px solid; bottom: 0px; height: 30px; position: fixed; width: 100%;}
+
+#recent {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
+#recent h2 {background: #eee; border-bottom: #ccc 1px solid; color: #333; padding: 3px 0; text-transform: lowercase;}
+#recent li a {color: #666; display: block; font-style: italic; padding: 2px 0;}
+#recent li a:hover {background: #ccc; color: #996600;}
+
+.adminControls {background: #333; overflow: auto; padding: 3px;}
+.adminControls ul {float: right;}
+.adminControls li {float: left; font-size: 12px; margin: 0 4px;}
 
 table {
     border: 1px solid rgb(200, 200, 200);

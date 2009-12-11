@@ -1,0 +1,10 @@
+<% unless @posts.size == 1 %>
+	<div id="recent">
+		<h2 class="tk-sorts-mill-goudy">{ Recent } </h2>
+		<ul>
+			<% @posts[1..8].each do |p| %>
+				<li><%= link_to p.title, p, :class => 'tk-sorts-mill-goudy' %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>

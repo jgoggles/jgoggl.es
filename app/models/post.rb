@@ -3,7 +3,9 @@ class Post < ActiveRecord::Base
   
   validates_presence_of :body, :user_id, :status, :post_type
   
-  named_scope :published, :conditions => {:status => "published"}
+  has_attached_file :title_image
+  
+  named_scope :published, :conditions => {:status => "published"}, :order => 'updated_at DESC'
   
   def self.statuses(options = [])
     options = ['published', 'draft']

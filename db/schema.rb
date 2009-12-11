@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091208025222) do
+ActiveRecord::Schema.define(:version => 20091211072416) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(:version => 20091208025222) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "title_image_file_name"
+    t.string   "title_image_content_type"
+    t.integer  "title_image_file_size"
+    t.datetime "title_image_updated_at"
+  end
+
+  create_table "taglines", :force => true do |t|
+    t.text     "copy"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "active"
   end
 
   create_table "users", :force => true do |t|

@@ -1,0 +1,17 @@
+<% form_for(@tagline) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :copy %><br />
+    <%= f.text_area :copy %>
+  </p>
+
+	<p>
+		<%= f.label :active %>
+		<%= f.check_box :active %>
+	</p>
+
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>
