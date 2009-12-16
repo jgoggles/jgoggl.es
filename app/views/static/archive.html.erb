@@ -1,10 +1,10 @@
 <div class="archiveContainer">
 	<ul>
 		<% @posts.each do |p| %>
-			<% unless p.updated_at.year == @posts[(@posts.index(p))-1].updated_at.year %>
+			<% unless p.updated_at.year == @posts[(@posts.index(p))-1].updated_at.year && p != @posts.first %>
 				<li><h1><%= p.updated_at.year %></h1></li>
 			<% end %>
-			<% unless p.updated_at.month == @posts[(@posts.index(p))-1].updated_at.month %>
+			<% unless p.updated_at.month == @posts[(@posts.index(p))-1].updated_at.month && p != @posts.first %>
 				<li><h2 class="tk-sorts-mill-goudy"><%= p.updated_at.strftime("%B") %></h2></li>
 			<% end %>
 			<li><%= link_to p.title, p, :class => 'tk-sorts-mill-goudy' %></li>
