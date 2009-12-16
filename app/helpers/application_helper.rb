@@ -9,8 +9,11 @@ module ApplicationHelper
     end
   end
   
+  def page_title
+    @page_title.nil? ? controller.action_name.capitalize : @page_title.titleize
+  end
   
-    # comment crazy
+  # comment crazy
   # in view
   # <% comment do %>
   # stuff to comment

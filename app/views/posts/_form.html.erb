@@ -22,6 +22,11 @@
 		<%= f.label :title_image %><br />
 		<%= f.file_field :title_image %>
 	</p>
+	
+	<p>
+		<label>Keep position</label>
+		<%= check_box_tag 'keep_position', 'yes', true %>
+	</p>
 
   <p>
     <%= f.submit 'Submit' %>

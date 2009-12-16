@@ -7,5 +7,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  filter_parameter_logging :password
+  
+  protected
+  
+  def login_required
+    unless current_user 
+      render :file => "#{RAILS_ROOT}/public/404.html", :status => 404
+    end
+  end
 end

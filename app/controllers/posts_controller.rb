@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { redirect_to @post, :status => 301 if @post.has_better_id? }
       format.xml  { render :xml => @post }
     end
   end
@@ -63,6 +63,10 @@ class PostsController < ApplicationController
   # PUT /posts/1.xml
   def update
     @post = Post.find(params[:id])
+    
+    if params[:keep_position] == 'yes'
+      Post.record_timestamps=false
+    end
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
