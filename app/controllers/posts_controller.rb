@@ -66,6 +66,8 @@ class PostsController < ApplicationController
     
     if params[:keep_position] == 'yes'
       Post.record_timestamps=false
+    else
+      Post.record_timestamps=true
     end
 
     respond_to do |format|
