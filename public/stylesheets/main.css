@@ -14,10 +14,12 @@ h2.tk-sorts-mill-goudy {font-size: 24px; font-weight: 300;}
 
 section {margin: 12px auto 62px auto; width: 660px;}
 section article {margin-bottom: 24px;}
-section article h2 {text-transform: uppercase;}
+section article h2 {font-family: Times, Georgia, serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
 section article h2 a {color: #996600;}
 section article h2 a:hover {color: #ccc;}
 section article p {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; margin: 6px 3px 12px 3px;}
+section article ol {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; list-style: decimal; 
+	margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
 section article a.title img {outline: #ccc 8px solid; margin: 10px;}
 section article a:hover.title img {outline: #996600 8px solid;}
@@ -130,39 +132,11 @@ th, td {
 	width: 500px;
 }
 
-/*Media Player*/
-#ymp-player .ymp-color-main,
-#ymp-tray .ymp-color-tray {
-background-color:#333 !important;
-}
-#ymp-relevance { display:none !important; }
-.ymp-player-max #ymp-body { width:570px !important; }
-.ymp-player-max #ymp-body #ymp-body-strip { width:557px !important; }
-.ymp-player-max #ymp-body #ymp-body-base  { width:560px !important; }
-/* Yahoo! Media Player: Playlist colors */
-/* Default color for playlist entries */
-#ymp-tray .ymp-tray-track {
-color:#eee !important;
-}
-
-/*Album art*/
-#ymp-meta-image { display:none !important; }
-#ymp-body #ymp-meta-top,
-#ymp-body #ymp-meta-bottom {
-left:8px !important;
-width:330px !important;
-}
- 
-/* Highlighted track */
-#ymp-tray .ymp-tray-track:hover {
-color:#996600 !important;
-background-color:transparent !important;
-}
- 
-/* Currently playing track */
-#ymp-tray .ymp-tray-track.playing,
-#ymp-tray .ymp-tray-track.playing:hover {
-color:#eee !important;
-background-color:#996600 !important;
+/*Hide the player*/
+#ymp-player,
+#ymp-tray,
+#ymp-error-bubble,
+#ymp-secret-bubble {
+display:none !important;
 }
 

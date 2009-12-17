@@ -3,7 +3,7 @@
 		<h2 class="tk-sorts-mill-goudy">{ Recent } </h2>
 		<ul>
 			<% @posts[0..7].each do |p| %>
-				<li><%= link_to p.title, p, :class => 'tk-sorts-mill-goudy' %></li>
+				<li><%= link_to p.title.titleize, p, :class => 'tk-sorts-mill-goudy' %></li>
 			<% end %>
 		</ul>
 	</div>
