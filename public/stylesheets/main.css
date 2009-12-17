@@ -129,3 +129,40 @@ th, td {
 	text-align: center;
 	width: 500px;
 }
+
+/*Media Player*/
+#ymp-player .ymp-color-main,
+#ymp-tray .ymp-color-tray {
+background-color:#333 !important;
+}
+#ymp-relevance { display:none !important; }
+.ymp-player-max #ymp-body { width:570px !important; }
+.ymp-player-max #ymp-body #ymp-body-strip { width:557px !important; }
+.ymp-player-max #ymp-body #ymp-body-base  { width:560px !important; }
+/* Yahoo! Media Player: Playlist colors */
+/* Default color for playlist entries */
+#ymp-tray .ymp-tray-track {
+color:#eee !important;
+}
+
+/*Album art*/
+#ymp-meta-image { display:none !important; }
+#ymp-body #ymp-meta-top,
+#ymp-body #ymp-meta-bottom {
+left:8px !important;
+width:330px !important;
+}
+ 
+/* Highlighted track */
+#ymp-tray .ymp-tray-track:hover {
+color:#996600 !important;
+background-color:transparent !important;
+}
+ 
+/* Currently playing track */
+#ymp-tray .ymp-tray-track.playing,
+#ymp-tray .ymp-tray-track.playing:hover {
+color:#eee !important;
+background-color:#996600 !important;
+}
+
