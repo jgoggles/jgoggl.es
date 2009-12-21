@@ -31,7 +31,7 @@ class PostsController < ApplicationController
     @post = Post.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => 'admin' }
       format.xml  { render :xml => @post }
     end
   end
@@ -39,6 +39,10 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    
+    respond_to do |format|
+      format.html { render :layout => 'admin' }
+    end
   end
 
   # POST /posts
@@ -53,7 +57,7 @@ class PostsController < ApplicationController
         format.html { redirect_to(@post) }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout => 'admin' }
         format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
       end
     end
@@ -76,7 +80,7 @@ class PostsController < ApplicationController
         format.html { redirect_to(@post) }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit", :layout => 'admin' }
         format.xml  { render :xml => @post.errors, :status => :unprocessable_entity }
       end
     end
