@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   
   has_friendly_id :title, :use_slug => true
   
-  validates_presence_of :body, :user_id, :status, :post_type
+  validates_presence_of :body, :user_id, :status, :post_type, :title
   
   has_attached_file :title_image
   

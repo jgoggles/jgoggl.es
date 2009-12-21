@@ -1,9 +1,9 @@
 <% @page_title = @post.title %>
 <article pubdate="<%= @post.updated_at %>">
-	<span class="date tk-sorts-mill-goudy"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
+	<span class="date goudy"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
 
 	<% if @post.title_image.url == "/title_images/original/missing.png" %>
-		<h2 class="tk-sorts-mill-goudy"><%= link_to @post.title, @post %></h2>
+		<h2 class="goudy"><%= link_to @post.title.titleize, @post %></h2>
 	<% else %>
 		<h2 class="off"><%= @post.title %></h2>
 		<%= link_to image_tag (@post.title_image.url, :title => @post.title), @post, :class => 'title' %>
@@ -20,7 +20,4 @@
 	    <li><%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %></li>
 		</ul>
 	</nav>
-	<div class="clearBoth"></div>
 <% end %>
-
-<%= render :partial => 'recent' %>
