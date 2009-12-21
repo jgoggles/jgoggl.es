@@ -10,17 +10,17 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 a, a:active, a:visited {color: #996600;}
 a:hover {color: #ccc;}
 
-h2.tk-sorts-mill-goudy {font-size: 24px; font-weight: 300;}
-
 section {margin: 12px auto 62px auto; width: 660px;}
 section article {margin-bottom: 24px;}
-/*section article .body {margin: 0 auto; width: 400px;}*/
-section article h2 {font-family: Times, Georgia, serif; font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
+section article h2 {font-family: Times, Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article h2 a {color: #996600;}
 section article h2 a:hover {color: #ccc;}
-section article p {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; margin: 6px 3px 12px 3px;}
-section article ol {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; list-style: decimal; 
-	margin: 6px 3px 12px 24px;}
+section article .body {background: #fff; color:#333; font-family: times, georgia, serif; font-size: 18px; line-height: 27px;}
+section article p {margin: 6px 3px 12px 3px;}
+section article p.opening:first-line {font-size: 20px; font-variant: small-caps; letter-spacing: 1px;}
+section article p.opening:first-letter {display: block; float: left; font-size: 56px; margin: 14px 4px 0px 0;}
+section article p.pullquote {float: right; font-size: 32px; font-style: italic; font-weight: bold; line-height: 1em; margin-right: 18px; text-align: right; width: 300px;}
+section article ol {list-style: decimal; margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
 section article a.title img {outline: #ccc 8px solid; margin: 10px;}
 section article a:hover.title img {outline: #996600 8px solid;}
@@ -33,10 +33,10 @@ section input[type='text']:focus, section input[type='password']:focus, section 
 section textarea {font-family: times, georgia, serif; font-size: 16px; padding: 4px; width: 100%;}
 
 header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 12px 0; text-align: center;}
-header h1.tk-sorts-mill-goudy a, 
-header h1.tk-sorts-mill-goudy a:visited {color: #333333; font-size: 100px; font-weight: 400; text-shadow: #6374AB 1px 2px 2px;}
-header h1.tk-sorts-mill-goudy a:hover {color: #996600;}
-header h2.tk-sorts-mill-goudy {color: #666; font-size: 20px; font-style: italic; font-weight: 300; margin: 0 auto; width: 400px;}
+header h1 a, 
+header h1 a:visited {color: #333333; font-size: 100px; font-weight: 400; text-shadow: #6374AB 1px 2px 2px;}
+header h1 a:hover {color: #996600;}
+header h2 {color: #666; font-size: 20px; font-style: italic; font-weight: 300; margin: 0 auto; width: 400px;}
 
 footer {background: #ccc; border-top: #eee 3px solid; bottom: 0px; height: 14px; padding: 8px 0; position: fixed; width: 100%;}
 footer nav.static ul {float: right; margin-right: 12px;}

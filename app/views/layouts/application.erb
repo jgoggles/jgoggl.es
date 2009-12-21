@@ -4,22 +4,25 @@
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<title>jgoggl.es - <%= page_title %></title>
 	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<%= stylesheet_link_tag 'main'  %>
-	<%= javascript_include_tag :defaults, 'fonts'  %>
+	<%= javascript_include_tag :defaults, 'fonts' %>
 
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+	
 	<%= yield :head %>
 	
-  <%= render :partial => 'tracking' %>
+  <% if RAILS_ENV=="production" %>
+    <%= render :partial => 'static/tracking' %>
+  <% end %>
 
 </head>
 <body>
 	<header>
-		<h1 class="tk-sorts-mill-goudy"><%= link_to 'jgoggl.es', '/' %></h1>
-		<h2 class="tk-sorts-mill-goudy"><%= tagline %></h2>
+		<h1 class="goudy"><%= link_to 'jgoggl.es', '/' %></h1>
+		<h2 class="goudy"><%= tagline %></h2>
 	</header>
 	<div class="topSeparator">
 		<% if current_user %>

@@ -1,9 +1,9 @@
 <% unless @posts.size == 1 %>
 	<div id="recent">
-		<h2 class="tk-sorts-mill-goudy">{ Recent } </h2>
+		<h2 class="goudy">{ Recent } </h2>
 		<ul>
 			<% @posts[0..7].each do |p| %>
-				<li><%= link_to p.title.titleize, p, :class => 'tk-sorts-mill-goudy' %></li>
+				<li><%= link_to p.title.titleize, p, :class => 'goudy' %></li>
 			<% end %>
 		</ul>
 	</div>
