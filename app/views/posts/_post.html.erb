@@ -9,7 +9,7 @@
 		<%= link_to image_tag (@post.title_image.url, :title => @post.title), @post, :class => 'title' %>
 	<% end %>
 
-	<p class="body"><%= @post.body %></p>
+	<div class="body"><%= @post.body %></div>
 </article>
 
 <% if current_user %>

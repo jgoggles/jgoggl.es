@@ -14,7 +14,8 @@ h2.tk-sorts-mill-goudy {font-size: 24px; font-weight: 300;}
 
 section {margin: 12px auto 62px auto; width: 660px;}
 section article {margin-bottom: 24px;}
-section article h2 {font-family: Times, Georgia, serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;}
+/*section article .body {margin: 0 auto; width: 400px;}*/
+section article h2 {font-family: Times, Georgia, serif; font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article h2 a {color: #996600;}
 section article h2 a:hover {color: #ccc;}
 section article p {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; margin: 6px 3px 12px 3px;}
@@ -23,6 +24,13 @@ section article ol {background: #fff; color:#333; font-family: times, georgia, s
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
 section article a.title img {outline: #ccc 8px solid; margin: 10px;}
 section article a:hover.title img {outline: #996600 8px solid;}
+section form p {background: #fff; color:#333; font-family: times, georgia, serif; line-height: 21px; margin: 6px 3px 12px 3px;}
+section form p label {text-transform: uppercase;}
+section input[type='text'], 
+section input[type='password'] {font-family: times, georgia, serif; font-size: 24px; padding: 4px; text-align: center; 
+	text-transform: uppercase; width: 100%;}
+section input[type='text']:focus, section input[type='password']:focus, section textarea:focus {border: #996600 2px solid;}
+section textarea {font-family: times, georgia, serif; font-size: 16px; padding: 4px; width: 100%;}
 
 header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 12px 0; text-align: center;}
 header h1.tk-sorts-mill-goudy a, 
@@ -37,7 +45,7 @@ footer nav.static li a:hover {color: #333;}
 
 #recent {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
 #recent h2 {background: #eee; border-bottom: #ccc 1px solid; color: #333; padding: 3px 0; text-transform: lowercase;}
-#recent li a {color: #666; display: block; font-style: italic; padding: 2px 0;}
+#recent li a {color: #666; display: block; font-style: italic; padding: 6px 0 2px 0;}
 #recent li a:hover, #recent li a:focus {background: #ccc; color: #996600;}
 
 .archiveContainer {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
@@ -117,7 +125,7 @@ th, td {
 	margin: 1em;
 	margin-bottom: 2em;
 	background-color: lightgray;
-	width: 400px;
+	text-align: center;
 /*	font: bold smaller sans-serif;*/
 }
 	
