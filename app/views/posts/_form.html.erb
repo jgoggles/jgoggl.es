@@ -31,4 +31,15 @@
   <p>
     <%= f.submit 'Submit' %>
   </p>
+
 <% end %>
+
+	<h3>Audio Snippet</h3>
+	<p class="snippet">
+&lt;p id="audioplayer_1">Alternative content&lt;/p&gt;
+&lt;script type="text/javascript"&gt;  
+	AudioPlayer.embed("audioplayer_1", {soundFile: "https://jgmusic.s3.amazonaws.com/song.mp3",
+		titles: "Title",  
+		artists: "Artist",});  
+&lt;/script&gt;
+	</p>

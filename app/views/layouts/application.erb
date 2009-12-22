@@ -10,7 +10,12 @@
 	<%= javascript_include_tag :defaults, 'fonts' %>
 
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+	<script type="text/javascript" src="/javascripts/audio-player.js"></script>  
+	<script type="text/javascript">  
+       AudioPlayer.setup("/flash/player.swf", {  
+           width: 660  
+       });  
+   </script>
 	
 	<%= yield :head %>
 	
