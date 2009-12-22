@@ -19,10 +19,11 @@ a:hover {color: #ccc;}
 aside {float: left; padding-left: 18px; width: 264px;}
 
 section {border-right: #ccc 1px dotted; float: left; padding-right: 18px; width: 676px;}
-section article {margin-bottom: 24px;}
-section article h2 {font-size: 36px; font-weight: 400; letter-spacing: 1px; margin-left: 5px;}
+section article {color:#333; margin-bottom: 24px;}
+section article h2 {font-size: 36px; font-weight: 400; letter-spacing: 1px;}
 section article h2 a {color: #996600;}
 section article h2 a:hover {color: #ccc;}
+section article h3 {font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article .body {background: #fff; color:#333; font-size: 16px; line-height: 24px;}
 section article p {margin: 6px 3px 12px 3px;}
 section article p:first-child:first-line {font-size: 24px; font-variant: small-caps; letter-spacing: 1px; line-height: 36px;}
@@ -59,7 +60,8 @@ footer nav.static li a:hover {color: #333;}
 .archiveContainer {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
 .archiveContainer h1 {background: #333; border-bottom: #ccc 1px solid; color: #996600; font-size: 24px; font-weight: 100; 
 	letter-spacing: 3px; padding: 12px 0;}
-.archiveContainer h2 {background: #eee;  color: #333; font-size: 18px; padding: 4px 0;}
+.archiveContainer h2 {background: #eee; color: #333; font-family: Helvetica, Arial, sans-serif; padding: 4px 0;
+	text-transform: uppercase;}
 .archiveContainer li a {color: #666; display: block; font-style: italic; padding: 6px 0;}
 .archiveContainer li a:hover, #recent li a:focus {background: #ccc; color: #996600;}
 

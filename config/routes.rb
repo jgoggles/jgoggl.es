@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.admin '/admin', :controller => 'admin', :action => 'index'
   map.admin '/archive', :controller => 'static', :action => 'archive'
+  map.admin '/about', :controller => 'static', :action => 'about'
   
   map.resources :users
 
