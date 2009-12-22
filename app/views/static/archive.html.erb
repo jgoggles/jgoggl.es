@@ -7,7 +7,7 @@
 			<% unless p.updated_at.month == @posts[(@posts.index(p))-1].updated_at.month && p != @posts.first %>
 				<li><h2><%= p.updated_at.strftime("%B") %></h2></li>
 			<% end %>
-			<li><%= link_to p.title, p %></li>
+			<li><%= link_to p.title.titleize, p %></li>
 		<% end %>
 	</ul>
 </div>
