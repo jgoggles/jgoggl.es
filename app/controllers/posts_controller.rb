@@ -6,6 +6,8 @@ class PostsController < ApplicationController
   def index
     @posts = Post.published
     @post = @posts.first
+    
+    @links = Link.recent
 
     respond_to do |format|
       format.html # index.html.erb

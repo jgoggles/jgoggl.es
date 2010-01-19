@@ -57,6 +57,13 @@ footer nav.static li a:hover {color: #333;}
 #recent li a:hover, #recent li a:focus {background: #eee; color: #996600;}
 #recent li:last-child {border-bottom: none;}
 
+.sidebar {border: #ccc 1px solid; margin: 12px 0; padding: 12px; text-align: right;}
+.sidebar h2 {border-bottom: #ccc 1px solid; color: #333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 3px 0; text-transform: uppercase;}
+.sidebar li {border-bottom: #ccc 1px dashed;}
+.sidebar li a {color: #666; display: block; font-style: italic; padding: 6px;}
+.sidebar li a:hover, .sidebar li a:focus {background: #eee; color: #996600;}
+.sidebar li:last-child {border-bottom: none;}
+
 .archiveContainer {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
 .archiveContainer h1 {background: #333; border-bottom: #ccc 1px solid; color: #996600; font-size: 24px; font-weight: 100; 
 	letter-spacing: 3px; padding: 12px 0;}
