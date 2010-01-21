@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  
   map.resources :links
 
   map.resources :taglines
@@ -8,8 +9,9 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.admin '/admin', :controller => 'admin', :action => 'index'
-  map.admin '/archive', :controller => 'static', :action => 'archive'
-  map.admin '/about', :controller => 'static', :action => 'about'
+  map.archive '/archive', :controller => 'static', :action => 'archive'
+  map.about '/about', :controller => 'static', :action => 'about'
+  map.about '/links_archive', :controller => 'static', :action => 'links_archive'
   
   map.resources :users
 

@@ -11,8 +11,9 @@ class ApplicationController < ActionController::Base
   
   protected
   
-  def prepare_posts
+  def prepare_variables
     @posts = Post.published
+    @links = Link.all
   end
   
   def login_required
