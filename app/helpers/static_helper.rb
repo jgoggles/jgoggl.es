@@ -24,7 +24,7 @@ module StaticHelper
         end
       end
       
-      # Either use the specified url argument as the object's url attribute or the object path itself
+      # Either use the url argument as the object's url attribute or the object path itself
       url.nil? ? @url = s : @url = s.url
     
       # Creat the li and the link
