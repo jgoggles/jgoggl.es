@@ -1,6 +1,6 @@
 <% unless @links.size == 0 %>
   <div id="links" class="sidebar">
-  	<h2>Today's, But Not Necessarily Today's, Links</h2>
+  	<h2>Today's (But Not Necessarily <i>Today</i> Today's) Links</h2>
   	<ul>
   		<% @links[0..7].each do |l| %>
   			<li><%= link_to l.description, l.url %></li>
