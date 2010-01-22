@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	<title>jgoggl.es - <%= page_title %></title>
+	<title>jgoggl.es - <%=h page_title.gsub(/<\/?[^>]*>/, "") %></title>
 	<!--[if IE]>
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
