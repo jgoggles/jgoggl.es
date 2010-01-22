@@ -10,11 +10,11 @@ class Post < ActiveRecord::Base
   named_scope :published, :conditions => {:status => "published"}, :order => 'updated_at DESC'
   
   def self.statuses(options = [])
-    options = ['published', 'draft']
+    options = %w[published draft]
   end
   
   def self.types(options = [])
-    options = ['post']
+    options = %w[post music]
   end
 
 end

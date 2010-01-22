@@ -5,6 +5,7 @@
   		<% @links[0..7].each do |l| %>
   			<li><%= link_to l.description, l.url %></li>
   		<% end %>
+			<li class="archive"><%= link_to "Archive of Links", "/links_archive" %></li>
   	</ul>
   </div>
 <% end %>

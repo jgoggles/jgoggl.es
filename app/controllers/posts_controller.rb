@@ -21,6 +21,7 @@ class PostsController < ApplicationController
   def show
     @posts = Post.published
     @post = Post.find(params[:id])
+    @links = Link.recent
 
     respond_to do |format|
       format.html { redirect_to @post, :status => 301 if @post.has_better_id? }

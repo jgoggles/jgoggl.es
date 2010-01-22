@@ -32,10 +32,20 @@ section article ol {list-style: decimal; margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
 section article a.title img {outline: #ccc 8px solid; margin: 10px;}
 section article a:hover.title img {outline: #996600 8px solid;}
+
+section #recentMain {margin: 6px 0;}
+section #recentMain h2 {border-bottom: #ccc 1px solid; color: #333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; 
+	padding: 3px 0; text-transform: uppercase;}
+section #recentMain a {color: #999; display: block; float: left; font-size: 22px; font-style: italic; line-height: 1em; 
+	height: 139px; margin: 12px 12px 12px 3px; outline: 3px #ccc solid; overflow: hidden; padding: 8px; text-transform: capitalize; 
+	width: 139px;}
+section #recentMain a:hover {background: #eee; outline: #999 3px solid;}
+
 form p {background: #fff; color:#333; line-height: 21px; margin: 6px 3px 12px 3px;}
 form p label {text-transform: uppercase;}
 input[type='text'], 
-input[type='password'] {font-family: Times, Georgia, serif; font-size: 24px; padding: 4px; text-align: center; text-transform: uppercase; width: 98%;}
+input[type='password'] {font-family: Times, Georgia, serif; font-size: 24px; letter-spacing: 2px; padding: 4px; text-align: center; 
+	text-transform: uppercase; width: 98%;}
 input[type='text']:focus, input[type='password']:focus, textarea:focus {border: #996600 2px solid;}
 textarea {font-family: Times, Georgia, serif; font-size: 16px; padding: 4px; width: 98%;}
 
@@ -50,19 +60,15 @@ footer nav.static ul {float: right; margin-right: 12px;}
 footer nav.static li {float: left; font-size: 12px; margin: 0 4px;}
 footer nav.static li a:hover {color: #333;}
 
-#recent {border: #ccc 1px solid; margin: 12px 0; padding: 12px; text-align: right;}
-#recent h2 {border-bottom: #ccc 1px solid; color: #333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 3px 0; text-transform: uppercase;}
-#recent li {border-bottom: #ccc 1px dashed;}
-#recent li a {color: #666; display: block; font-style: italic; padding: 6px;}
-#recent li a:hover, #recent li a:focus {background: #eee; color: #996600;}
-#recent li:last-child {border-bottom: none;}
-
 .sidebar {border: #ccc 1px solid; margin: 12px 0; padding: 12px; text-align: right;}
-.sidebar h2 {border-bottom: #ccc 1px solid; color: #333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 3px 0; text-transform: uppercase;}
+.sidebar h2 {border-bottom: #ccc 1px solid; color: #333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; padding: 3px 0; 
+	text-transform: uppercase;}
 .sidebar li {border-bottom: #ccc 1px dashed;}
 .sidebar li a {color: #666; display: block; font-style: italic; padding: 6px;}
 .sidebar li a:hover, .sidebar li a:focus {background: #eee; color: #996600;}
 .sidebar li:last-child {border-bottom: none;}
+.sidebar li.archive a {color: #999; font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 12px;}
+.sidebar li.archive a:hover {color: #996600;}
 
 .archiveContainer {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
 .archiveContainer h1 {background: #333; border-bottom: #ccc 1px solid; color: #996600; font-size: 24px; font-weight: 100; 

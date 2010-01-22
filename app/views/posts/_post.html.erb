@@ -1,4 +1,11 @@
 <% @page_title = @post.title %>
+
+<% if @post.post_type == 'music' %>
+	<% content_for :head do %>
+		<%= render :partial => 'static/music' %>
+	<% end %>
+<% end %>
+
 <article pubdate="<%= @post.updated_at %>">
 	<span class="date goudy"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
 
@@ -12,12 +19,24 @@
 	<div class="body"><%= @post.body %></div>
 </article>
 
-<% if current_user %>
-	<nav class="adminControls">
-		<ul>
-			<li><%= link_to 'Show', @post %></li>
-	    <li><%= link_to 'Edit', edit_post_path(@post) %></li>
-	    <li><%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %></li>
-		</ul>
-	</nav>
-<% end %>
+
+<nav class="adminControls">
+	<ul>
+		<% if current_user %>
+		<li><%= link_to 'Show', @post %></li>
+    <li><%= link_to 'Edit', edit_post_path(@post) %></li>
+    <li><%= link_to 'Destroy', @post, :confirm => 'Are you sure?', :method => :delete %></li>
+		<% end %>
+	</ul>
+</nav>
+
+<div id="recentMain" class="goudy">
+	<h2>Recent</h2>
+	<% @posts[0..8].each do |p| %>
+		<% if p.title_image.url == "/title_images/original/missing.png" %>
+			<%= link_to p.title, p  %>
+		<% else %>
+			<%= link_to p.title, p, :class => 'off', :style => "background: url(#{p.title_image.url}) no-repeat" %>
+		<% end %>
+	<% end %>
+</div>
