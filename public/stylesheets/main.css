@@ -30,7 +30,7 @@ section article p:first-child:first-line {font-size: 24px; font-variant: small-c
 section article p.pullquote {float: right; font-size: 32px; font-style: italic; font-weight: bold; line-height: 1em; margin: 0 18px; text-align: right; width: 300px;}
 section article ol {list-style: decimal; margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
-section article a.title img {outline: #ccc 8px solid; margin: 10px;}
+section article a.title img, section article img.title {outline: #ccc 8px solid; margin: 10px;}
 section article a:hover.title img {outline: #996600 8px solid;}
 
 section #recentMain {margin: 6px 0;}

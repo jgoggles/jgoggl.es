@@ -13,7 +13,7 @@
 		<h2 class="goudy"><%= link_to @post.title.titleize, @post %></h2>
 	<% else %>
 		<h2 class="off"><%= @post.title %></h2>
-		<%= link_to image_tag (@post.title_image.url, :title => @post.title), @post, :class => 'title' %>
+		<%= link_to_unless_current image_tag (@post.title_image.url, :title => @post.title, :class => 'title'), @post, :class => 'title' %>
 	<% end %>
 
 	<div class="body"><%= @post.body %></div>
