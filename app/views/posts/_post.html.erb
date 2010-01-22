@@ -30,11 +30,11 @@
 	</ul>
 </nav>
 
-<div id="recentMain" class="goudy">
+<div id="recentMain">
 	<h2>Recent</h2>
 	<% @posts[0..8].each do |p| %>
 		<% if p.title_image.url == "/title_images/original/missing.png" %>
-			<%= link_to p.title, p  %>
+			<%= link_to p.title, p, :class => "goudy"  %>
 		<% else %>
 			<%= link_to p.title, p, :class => 'off', :style => "background: url(#{p.title_image.url}) no-repeat" %>
 		<% end %>
