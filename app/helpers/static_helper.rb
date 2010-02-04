@@ -13,7 +13,7 @@ module StaticHelper
       # Create an h1 with the object's updated_at year, but only once for each year
       unless s.updated_at.year == set[(set.index(s))-1].updated_at.year && s != set.first 
         content << content_tag(:li) do
-          content_tag(:h1, s.updated_at.year, :class => 'goudy')
+          content_tag(:h1, s.updated_at.year, :class => 'lemonde')
         end
       end
     
