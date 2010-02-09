@@ -73,7 +73,7 @@ footer nav.static li a:hover {color: #333;}
 	letter-spacing: 3px; padding: 12px 0;}
 .archiveContainer h2 {background: #eee; color: #333; padding: 4px 0;
 	text-transform: uppercase;}
-.archiveContainer li a {color: #666; display: block; font-style: italic; padding: 6px 0; text-transform: capitalize;}
+.archiveContainer li a {color: #666; display: block; font-size: 14px; padding: 4px 0; text-transform: capitalize;}
 .archiveContainer li a:hover, #recent li a:focus {background: #ccc; color: #3F7BB5;}
 
 .topSeparator {background: #333; height: 12px; overflow: auto; margin-top: -3px; padding: 4px;}
