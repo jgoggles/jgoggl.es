@@ -19,7 +19,7 @@ aside {float: left; padding-left: 18px; width: 264px;}
 section {border-right: #ccc 1px dotted; float: left; padding-right: 18px; width: 676px;}
 section article {color:#333; margin-bottom: 24px;}
 section article h2 {font-size: 36px; font-weight: 400; letter-spacing: 1px;}
-section article h2 a {color: #EE3F20;}
+section article h2 a {color: #cd0000;}
 section article h2 a:hover {color: #ccc;}
 section article h3 {font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article .body {background: #fff; color:#333; font-size: 16px; line-height: 24px;}
