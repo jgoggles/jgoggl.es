@@ -9,7 +9,7 @@ body {font-family: Helvetica, Arial, sans-serif;}
 .last {margin-right: 0px !important;}
 .off {text-indent: -10000px; margin-top: -40px;}
 
-a, a:active, a:visited {color: #996600;}
+a, a:active, a:visited {color: #cd0000;}
 a:hover {color: #ccc;}
 
 #container {margin: 0 auto 62px auto; overflow: auto; padding-top: 12px; width: 980px;}
@@ -19,7 +19,7 @@ aside {float: left; padding-left: 18px; width: 264px;}
 section {border-right: #ccc 1px dotted; float: left; padding-right: 18px; width: 676px;}
 section article {color:#333; margin-bottom: 24px;}
 section article h2 {font-size: 36px; font-weight: 400; letter-spacing: 1px;}
-section article h2 a {color: #996600;}
+section article h2 a {color: #EE3F20;}
 section article h2 a:hover {color: #ccc;}
 section article h3 {font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article .body {background: #fff; color:#333; font-size: 16px; line-height: 24px;}
@@ -29,7 +29,7 @@ section article p.pullquote {float: right; font-size: 32px; font-style: italic; 
 section article ol {list-style: decimal; margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; margin: 6px 0 12px 0; padding-bottom: 3px;}
 section article a.title img, section article img.title {outline: #ccc 8px solid; margin: 10px;}
-section article a:hover.title img {outline: #996600 8px solid;}
+section article a:hover.title img {outline: #cd0000 8px solid;}
 
 section #recentMain {margin: 6px 0;}
 section #recentMain h2 {border-bottom: #ccc 1px solid; color: #333; font-size: 14px; 
@@ -44,13 +44,13 @@ form p label {text-transform: uppercase;}
 input[type='text'], 
 input[type='password'] {font-size: 24px; letter-spacing: 2px; padding: 4px; text-align: center; 
 	text-transform: uppercase; width: 98%;}
-input[type='text']:focus, input[type='password']:focus, textarea:focus {border: #996600 2px solid;}
+input[type='text']:focus, input[type='password']:focus, textarea:focus {border: #cd0000 2px solid;}
 textarea {font-size: 16px; padding: 4px; width: 98%;}
 
 header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 0px 0; text-align: center;}
 header h1 a, 
 header h1 a:visited {color: #333333; font-size: 40px; font-weight: 100;}
-header h1 a:hover {color: #996600;}
+header h1 a:hover {color: #cd0000;}
 header h2 {color: #666; font-family: Times, serif; font-size: 16px; font-weight: 100; font-style: italic;}
 
 footer {background: #ccc; border-top: #eee 3px solid; bottom: 0px; height: 14px; padding: 8px 0; position: fixed; width: 100%;}
@@ -63,18 +63,18 @@ footer nav.static li a:hover {color: #333;}
 	text-transform: uppercase;}
 .sidebar li {border-bottom: #ccc 1px dashed;}
 .sidebar li a {color: #666; display: block; font-size: 12px; padding: 6px;}
-.sidebar li a:hover, .sidebar li a:focus {background: #eee; color: #996600;}
+.sidebar li a:hover, .sidebar li a:focus {background: #eee; color: #cd0000;}
 .sidebar li:last-child {border-bottom: none;}
 .sidebar li.archive a {color: #999; font-style: normal; font-size: 12px;}
-.sidebar li.archive a:hover {color: #996600;}
+.sidebar li.archive a:hover {color: #cd0000;}
 
 .archiveContainer {border: #ccc 1px solid; margin: 12px 0; text-align: center;}
-.archiveContainer h1 {background: #333; border-bottom: #ccc 1px solid; color: #996600; font-size: 24px; font-weight: 100; 
+.archiveContainer h1 {background: #333; border-bottom: #ccc 1px solid; color: #cd0000; font-size: 24px; font-weight: 100; 
 	letter-spacing: 3px; padding: 12px 0;}
 .archiveContainer h2 {background: #eee; color: #333; padding: 4px 0;
 	text-transform: uppercase;}
 .archiveContainer li a {color: #666; display: block; font-style: italic; padding: 6px 0; text-transform: capitalize;}
-.archiveContainer li a:hover, #recent li a:focus {background: #ccc; color: #996600;}
+.archiveContainer li a:hover, #recent li a:focus {background: #ccc; color: #cd0000;}
 
 .topSeparator {background: #333; height: 12px; overflow: auto; margin-top: -3px; padding: 4px;}
 .topSeparator nav ul {float: right;}
