@@ -3,7 +3,7 @@
 /*HTML5*/
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {font-family: 'Lucida Grande', Arial, sans-serif;}
+body {font-family: Helvetica, Arial, sans-serif;}
 
 .first {margin-left: 0px !important;}
 .last {margin-right: 0px !important;}
@@ -34,7 +34,7 @@ section article a:hover.title img {outline: #3F7BB5 8px solid;}
 section #recentMain {margin: 6px 0;}
 section #recentMain h2 {border-bottom: #ccc 1px solid; color: #333; font-size: 14px; 
 	padding: 3px 0; text-transform: uppercase;}
-section #recentMain a {color: #999; display: block; float: left; font-size: 22px; line-height: 1em; 
+section #recentMain a {color: #999; display: block; float: left; font-size: 14px; line-height: 1em; 
 	height: 139px; margin: 12px 11px 3px 3px; outline: 3px #ccc solid; overflow: hidden; padding: 8px; text-transform: capitalize; 
 	width: 139px;}
 section #recentMain a:hover {background: #eee; outline: #999 3px solid;}
