@@ -1,0 +1,18 @@
+<ul id="postList">
+<% @posts.each do |p| %>
+  <li>
+    <% if p.updated_at > 2.days.ago %>
+      <div class="new lemonde">
+        NEW
+      </div>
+    <% end %>
+    <%= link_to "
+      <div class='type fertigo'>{#{p.post_type}}</div>
+      <div class='title angie'>#{p.title}</div>
+      <div class='date fertigo'>#{p.updated_at.strftime('%B %d, %Y')}</div>
+      <span class='clearBoth'></span>",
+      p %>
+    </a>
+  </li>
+<% end %>
+</ul>

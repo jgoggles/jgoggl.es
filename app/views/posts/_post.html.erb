@@ -7,16 +7,16 @@
 <% end %>
 
 <article pubdate="<%= @post.updated_at %>">
-	<span class="date lemonde"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
+	<span class="date fertigo"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
 
 	<% if @post.title_image.url == "/title_images/original/missing.png" %>
-		<h2 class="lemonde"><%= link_to @post.title.titleize, @post %></h2>
+		<h2 class="angie"><%= link_to @post.title.titleize, @post %></h2>
 	<% else %>
 		<h2 class="off"><%= @post.title %></h2>
 		<%= link_to_unless_current image_tag (@post.title_image.url, :title => @post.title, :class => 'title'), @post, :class => 'title' %>
 	<% end %>
 
-	<div class="body"><%= @post.body %></div>
+	<div class="body lemonde"><%= @post.body %></div>
 </article>
 
 
@@ -30,6 +30,7 @@
 	</ul>
 </nav>
 
+<% comment do %>
 <div id="recentMain">
 	<h2>Recent</h2>
 	<% @posts[0..8].each do |p| %>
@@ -40,3 +41,4 @@
 		<% end %>
 	<% end %>
 </div>
+<% end %>
