@@ -14,6 +14,12 @@
 	<% else %>
 		<h2 class="off"><%= @post.title %></h2>
 		<%= link_to_unless_current image_tag (@post.title_image.url, :title => @post.title, :class => 'title'), @post, :class => 'title' %>
+		<div class="blockDate lemonde">
+      <div class="month"><%= @post.updated_at.strftime("%B") %></div>
+      <div class="day"><%= @post.updated_at.strftime("%d") %></div>
+      <div class="year"><%= @post.updated_at.strftime("%Y") %></div>
+		</div>
+		<div class="clearBoth"></div>
 	<% end %>
 
 	<div class="body lemonde"><%= @post.body %></div>
