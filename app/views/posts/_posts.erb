@@ -16,7 +16,7 @@
 	      <div class='title angie'>#{p.title.titleize}</div>
 	      <div class='date fertigo'>#{p.updated_at.strftime('%B %d, %Y')}</div>
 	      <span class='clearBoth'></span>",
-	      p.body %>
+	      p.body, :target => "_blank" %>
 		<% else %>
 	    <%= link_to "
 	      <div class='type lemonde #{p.post_type}'>{#{p.post_type}}</div>
