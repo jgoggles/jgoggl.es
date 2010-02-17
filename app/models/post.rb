@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
   end
   
   def self.types(options = [])
-    options = %w[post music]
+    options = %w[post music link]
   end
 
 end

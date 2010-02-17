@@ -5,14 +5,26 @@
       <div class="new lemonde">
         NEW
       </div>
+		<% elsif p.updated_at < 2.days.ago && p.updated_at > 7.days.ago %>
+		<div class="newish lemonde">
+      NEWISH
+    </div>
     <% end %>
-    <%= link_to "
-      <div class='type fertigo'>{#{p.post_type}}</div>
-      <div class='title angie'>#{p.title}</div>
-      <div class='date fertigo'>#{p.updated_at.strftime('%B %d, %Y')}</div>
-      <span class='clearBoth'></span>",
-      p %>
-    </a>
+		<% if p.post_type == "link" %>
+			<%= link_to "
+	      <div class='type lemonde #{p.post_type}'>{#{p.post_type}}</div>
+	      <div class='title angie'>#{p.title.titleize}</div>
+	      <div class='date fertigo'>#{p.updated_at.strftime('%B %d, %Y')}</div>
+	      <span class='clearBoth'></span>",
+	      p.body %>
+		<% else %>
+	    <%= link_to "
+	      <div class='type lemonde #{p.post_type}'>{#{p.post_type}}</div>
+	      <div class='title angie'>#{p.title.titleize}</div>
+	      <div class='date fertigo'>#{p.updated_at.strftime('%B %d, %Y')}</div>
+	      <span class='clearBoth'></span>",
+	      p %>
+		<% end %>
   </li>
 <% end %>
 </ul>

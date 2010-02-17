@@ -7,9 +7,8 @@
 <% end %>
 
 <article pubdate="<%= @post.updated_at %>">
-	<span class="date fertigo"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
-
 	<% if @post.title_image.url == "/title_images/original/missing.png" %>
+		<span class="date fertigo"><%= @post.updated_at.strftime("%B %d, %Y") %></span>
 		<h2 class="angie"><%= link_to @post.title.titleize, @post %></h2>
 	<% else %>
 		<h2 class="off"><%= @post.title %></h2>

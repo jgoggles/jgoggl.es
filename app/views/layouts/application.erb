@@ -21,8 +21,10 @@
 </head>
 <body>
 	<header>
-		<%#= link_to image_tag ('/images/test_head.png', :border =>0), '/' %>
-		<!-- <h2><%#= tagline %></h2> -->
+		<div id="headerContainer">
+			<h1 class="lemonde"><%= link_to "jgoggl.es", "/" %></h1>
+			<h2 class="angie"><%= tagline %></h2>
+		</div>
 	</header>
 	<div class="topSeparator">
 		<% if current_user %>

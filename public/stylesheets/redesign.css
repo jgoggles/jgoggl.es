@@ -9,7 +9,7 @@ body {font-family: Helvetica, Arial, sans-serif;}
 .last {margin-right: 0px !important;}
 .off {text-indent: -10000px; margin-top: -40px;}
 
-a, a:active, a:visited {color: #000;}
+a, a:active, a:visited {color: #3F7BB5;}
 a:hover {color: #ccc;}
 
 .date {color: #666; font-size: .8em; font-style: italic;}
@@ -22,17 +22,24 @@ section {}
 section #postList {font-size: 16px;}
 section #postList li {border-top: #ccc 1px dotted;}
 section #postList li a {display: block; padding: 12px;}
+section #postList a, 
+section #postList a:active, 
+section #postList a:visited {color: #333;}
+section #postList a:hover {background: #eee; color: #3F7BB5;}
 section #postList li a div {float: left;}
-section #postList .type, section #postList .date {color: #666; font-size: .8em; font-style: italic;}
-section #postList li a:hover {background: #eee; color: #3F7BB5;}
+section #postList .type, section #postList .date {color: #666; font-size: .8em;}
 section #postList .type {width: 70px;}
 section #postList .title {padding: 0 10px; width: 716px;}
 section #postList .date {text-align: right; width: 150px;}
-section #postList .new {background: green; color: white; padding: 3px 5px; text-align: center; width: 60px;}
+section #postList .new {background: green; color: white; font-size: 10px; letter-spacing: 1px; padding: 3px 5px;}
+section #postList .newish {background: #CF6; color: #999; font-size: 10px; letter-spacing: 1px; padding: 3px 5px;}
+section #postList .post {color: #0080FF;}
+section #postList .music {color: #F66;}
+section #postList .link {color: #408000;}
 
 section article {color:#333; margin-bottom: 24px;}
 section article h2 {font-size: 24px; font-weight: 400;}
-section article h2 a {color: #000; text-decoration: underline;}
+section article h2 a, section article h2 a:visited {color: #333;}
 section article h2 a:hover {color: #3F7BB5;}
 section article h3 {font-weight: 400; letter-spacing: 2px; margin-left: 5px; text-transform: uppercase;}
 section article .body {background: #fff; color:#333; font-size: 14px; line-height: 24px;}
@@ -41,11 +48,11 @@ section article p:first-child:first-line {font-size: 20px; font-variant: small-c
 section article p.pullquote {float: right; font-size: 32px; font-style: italic; font-weight: bold; line-height: 1em; margin: 0 18px; text-align: right; width: 300px;}
 section article ol {list-style: decimal; margin: 6px 3px 12px 24px;}
 section article span.date {border-bottom: #999 1px dotted; color: #333; display: block; font-style: italic; margin: 6px 0 12px 0; padding-bottom: 3px;}
-section article a.title img, section article img.title {float: left; outline: #ccc 8px solid; margin: 18px 10px 10px 10px;}
+section article a.title img, section article img.title {float: left; outline: #eee 8px solid; margin: 18px 10px 10px 10px;}
 section article a:hover.title img {outline: #3F7BB5 8px solid;}
-section article .blockDate {background: #ccc; float: left; height: 275px; margin: 10px 0px 10px 5px; padding: 10px; text-align: center; font-style: italic; width: 275px;}
+section article .blockDate {background: #eee; border: #ccc 1px dotted; float: left; font-weight: 100; height: 273px; margin: 10px 0px 10px 5px; padding: 10px; text-align: center; font-style: italic; width: 273px;}
 section article .blockDate .month {font-size: 48px;}
-section article .blockDate .day {font-size: 168px; margin-top: -50px;}
+section article .blockDate .day {font-size: 205px; margin-bottom: -40px; margin-top: -45px;}
 section article .blockDate .year {font-size: 48px;}
 
 /*section #recentMain {margin: 6px 0;}
@@ -64,11 +71,13 @@ input[type='password'] {font-size: 24px; letter-spacing: 2px; padding: 4px; text
 input[type='text']:focus, input[type='password']:focus, textarea:focus {border: #3F7BB5 2px solid;}
 textarea {font-size: 16px; padding: 4px; width: 98%;}
 
-header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 0px 0; text-align: center;}
+
+header {background: #eee; border-bottom: #ccc 3px solid; padding: 8px 0 0px 0; text-align: left;}
+header #headerContainer {margin: 0 auto; width: 980px;}
 header h1 a, 
-header h1 a:visited {color: #333333; font-size: 40px; font-weight: 100;}
+header h1 a:visited {color: #333333; font-size: 24px; font-weight: 100;}
 header h1 a:hover {color: #3F7BB5;}
-header h2 {color: #666; font-family: Times, serif; font-size: 16px; font-weight: 100; font-style: italic;}
+header h2 {color: #666; font-size: 14px; /*font-style: italic;*/ font-weight: 100; margin-bottom: 12px;}
 
 footer {background: #ccc; border-top: #eee 3px solid; bottom: 0px; height: 14px; padding: 8px 0; position: fixed; width: 100%;}
 footer nav.static ul {float: right; margin-right: 12px;}

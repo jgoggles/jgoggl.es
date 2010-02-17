@@ -20,7 +20,7 @@ module StaticHelper
       # Create an h2 with the object's updated_at month, but only once for each month
       unless s.updated_at.month == set[(set.index(s))-1].updated_at.month && s != set.first
         content << content_tag(:li) do
-          content_tag(:h2, s.updated_at.strftime("%B"))
+          content_tag(:h2, s.updated_at.strftime("%B"), :class => 'angie')
         end
       end
       
@@ -35,7 +35,7 @@ module StaticHelper
     
     # Package it all up
     content_tag(:div, :class => 'archiveContainer') do 
-      content_tag(:ul, content)
+      content_tag(:ul, content, :class => 'lemonde')
     end 
   end
   
