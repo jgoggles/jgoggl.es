@@ -1,9 +1,11 @@
 <% @page_title = @post.title %>
 
-<% if @post.post_type == 'music' %>
-	<% content_for :head do %>
-		<%= render :partial => 'static/music' %>
-	<% end %>
+<% comment do %>
+  <% if @post.post_type == 'music' %>
+  	<% content_for :head do %>
+  		<%= render :partial => 'static/music' %>
+  	<% end %>
+  <% end %>
 <% end %>
 
 <article pubdate="<%= @post.updated_at %>">
@@ -34,16 +36,3 @@
 		<% end %>
 	</ul>
 </nav>
-
-<% comment do %>
-<div id="recentMain">
-	<h2>Recent</h2>
-	<% @posts[0..8].each do |p| %>
-		<% if p.title_image.url == "/title_images/original/missing.png" %>
-			<%= link_to p.title, p, :class => "lemonde"  %>
-		<% else %>
-			<%= link_to p.title, p, :class => 'off', :style => "background: url(#{p.title_image.url}) no-repeat" %>
-		<% end %>
-	<% end %>
-</div>
-<% end %>
