@@ -52,18 +52,6 @@
   		  </div>
   		<% end %>
   		
-  		<div id="todaysMusic">
-  		  <h5>Song</h5>
-    		<p id="audioplayer_1">Alternative content</p>
-        <script type="text/javascript">  
-        	AudioPlayer.embed("audioplayer_1", {soundFile: "https://jgmusic.s3.amazonaws.com/harlem_03_south_of_france.mp3",
-        		titles: "South of France",  
-        		artists: "Harlem",});  
-        </script>
-        <%= link_to "Harlem - South of France", "https://jgmusic.s3.amazonaws.com/harlem_03_south_of_france.mp3" %>
-      </div>
-      
-      <h5 class="lemonde">Posts</h5>
   	  <%= yield %>
 
   	</section>
